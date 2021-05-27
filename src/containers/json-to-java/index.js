@@ -17,7 +17,7 @@ const JsonToJavaContainer = () => {
 
     const [input, setInput] = useState([{"name":"2112","test":12.5,"result":true,"obj":{"name":"1212"}},{"name":"2112","test":12.5,"result":true,"obj":{"name":"1212"}}])
 
-    const [code, setCode] = useState("int b=1;")
+    const [code, setCode] = useState("")
 
     const onChange = (newValue) => {
         console.log("change", newValue);
