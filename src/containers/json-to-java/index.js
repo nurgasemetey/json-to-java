@@ -1,15 +1,17 @@
 import { useState } from 'react';
-import { Row, Col, Card, PageHeader, Button } from 'antd';
+import { Row, Col, Card, PageHeader, Button, Layout } from 'antd';
 import _ from 'lodash';
 
 import { JsonEditor as Editor } from 'jsoneditor-react'
 import 'jsoneditor-react/es/editor.min.css'
 import AceEditor from "react-ace";
-
+import { GithubFilled, TwitterSquareFilled } from '@ant-design/icons';
 import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/theme-github";
-import 'ace-builds/src-noconflict/ext-language_tools'
-import 'ace-builds/src-noconflict/ext-beautify'
+import 'ace-builds/src-noconflict/ext-language_tools';
+import 'ace-builds/src-noconflict/ext-beautify';
+import { RedditIcon, RedditShareButton, TelegramIcon, TelegramShareButton, TwitterIcon, TwitterShareButton } from 'react-share';
+const { Header, Footer, Sider, Content } = Layout;
 
 const JsonToJavaContainer = () => {
 
@@ -89,7 +91,9 @@ const JsonToJavaContainer = () => {
 
     return (
         <div>
-
+        <Layout>
+            {/* <Header>Header</Header> */}
+            <Content>
             <Row
                 justify="center"
                 align="middle"
@@ -127,6 +131,7 @@ const JsonToJavaContainer = () => {
                     <Editor
                         id="JSONEditor"
                         mode={mode}
+                        htmlElementProps={{ style: { height: 500 } }}
                         value={input}
                         onChange={setInput}
                     />
@@ -165,6 +170,36 @@ const JsonToJavaContainer = () => {
 
             </Col>
             </Row>
+            </Content>
+            <Footer style={{ textAlign: 'center' }}>
+            <Row
+              justify="center"
+              align="middle"
+              gutter={[10, 10]}
+            >
+              <a
+                href="https://github.com/nurgasemetey/json-to-java"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "16px" }}
+              >
+                  {/* a */}
+                <GithubFilled /> Source code on Github
+                </a>
+                  -
+              <a
+                href="https://twitter.com/nurgasemetey"
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{ fontSize: "16px" }}
+              >
+                  {/* b */}
+                <TwitterSquareFilled /> Follow me on Twitter
+                </a>
+            </Row>
+            </Footer>
+        </Layout>
+
         </div>
     )
 
