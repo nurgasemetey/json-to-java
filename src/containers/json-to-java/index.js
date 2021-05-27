@@ -110,7 +110,7 @@ const JsonToJavaContainer = () => {
 
                     <PageHeader
                         title="Convert JSON to Java"
-                        subTitle="Convert JSON to Java Map<String,Object>"
+                        subTitle="Convert JSON to Java Map<String,Object> or List<Map<String,Object>>"
                     />
                 </Col>
             </Row>

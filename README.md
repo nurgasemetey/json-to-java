@@ -1,6 +1,6 @@
 # JSON to JAVA
 
-Convert JSON to Java Map<String,Object>
+Convert JSON to Java `Map<String,Object>` or `List<Map<String,Object>>`
 
 [DEMO](https://nurgasemetey.com/json-to-java)
 
