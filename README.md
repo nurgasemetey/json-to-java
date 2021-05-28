@@ -45,7 +45,7 @@ And you have following JSON to persist each time:
         {
             "default" : true,
             "imageUrl" : "/img/map/osm.png",
-            "name" : "OSM Yol",
+            "name" : "OSM",
             "type" : "Tile Layer",
             "url" : "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         }, 
