@@ -5,7 +5,7 @@ import _ from 'lodash';
 import { JsonEditor as Editor } from 'jsoneditor-react'
 import 'jsoneditor-react/es/editor.min.css'
 import AceEditor from "react-ace";
-import { GithubFilled, TwitterSquareFilled } from '@ant-design/icons';
+import { GithubFilled, TwitterSquareFilled, ArrowRightOutlined } from '@ant-design/icons';
 import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/theme-github";
 import 'ace-builds/src-noconflict/ext-language_tools';
@@ -145,7 +145,7 @@ const JsonToJavaContainer = () => {
                     xl={{ span: 2 }}
                 >
                     <Button type="primary"
-                        onClick={convert}
+                        onClick={convert} icon={<ArrowRightOutlined />}
                     >
                         Convert
                     </Button>
