@@ -184,17 +184,7 @@ const JsonToJavaContainer = () => {
                 style={{ fontSize: "16px" }}
               >
                   {/* a */}
-                <GithubFilled /> Source code on Github
-                </a>
-                  -
-              <a
-                href="https://twitter.com/nurgasemetey"
-                rel="noopener noreferrer"
-                target="_blank"
-                style={{ fontSize: "16px" }}
-              >
-                  {/* b */}
-                <TwitterSquareFilled /> Follow me on Twitter
+                <GithubFilled /> Github
                 </a>
             </Row>
             </Footer>
