@@ -124,7 +124,7 @@ const JsonToJavaContainer = () => {
                 <Col
                     xs={{ span: 23 }}
                     sm={{ span: 23 }}
-                    md={{ span: 23 }}
+                    md={{ span: 10 }}
                     lg={{ span: 10 }}
                     xl={{ span: 10 }}
                 >
@@ -138,8 +138,8 @@ const JsonToJavaContainer = () => {
 
                 </Col>
                 <Col
-                    xs={{ span: 2 }}
-                    sm={{ span: 2 }}
+                    xs={{ span: 23 }}
+                    sm={{ span: 23 }}
                     md={{ span: 2 }}
                     lg={{ span: 2 }}
                     xl={{ span: 2 }}
@@ -154,7 +154,7 @@ const JsonToJavaContainer = () => {
                 <Col
                     xs={{ span: 23 }}
                     sm={{ span: 23 }}
-                    md={{ span: 23 }}
+                    md={{ span: 10 }}
                     lg={{ span: 10 }}
                     xl={{ span: 10 }}
                 >
